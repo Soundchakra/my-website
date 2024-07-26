@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundchakra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            background-image: url('DALLE2024-04-3023.38.26-Ateenageboyseenfrombehindplayinganacousticguitarsittingonagrassyhillinalandscapeformat.ThebreathtakingHimalayasinNepalformt-ezgif.com-webp-to-jpg-converter.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        header {
+            background-color: rgba(30, 30, 30, 0.9);
+            color: #B0B0B0;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            text-transform: uppercase;
+            font-size: 2em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background-color: rgba(30, 30, 30, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .section {
+            padding: 20px 0;
+            position: relative;
+        }
+        .section-content {
+            display: block;
+            padding: 10px 0;
+        }
+        h2 {
+            color: #B0B0B0;
+            border-bottom: 2px solid #B0B0B0;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: color 0.3s, border-bottom-color 0.3s;
+        }
+        h2:hover {
+            color: #E0E0E0;
+            border-bottom-color: #E0E0E0;
+        }
+        .toggle-btn {
+            position: absolute;
+            right: 10px;
+            top: 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #666;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: rgba(176, 176, 176, 0.2);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background-color: rgba(30, 30, 30, 0.9);
+            color: #B0B0B0;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .musical-symbol {
+            font-size: 1.5em;
+            margin-left: 10px;
+        }
+        img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 10%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Soundchakra<span class="musical-symbol">&#9835;</span></h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <img src="IMG_8009.JPG" alt="Karma Tamang">
+            <h2>About Me</h2>
+            <div class="section-content">
+                <div>
+                    <p>Hi, I'm Karma Tamang, also known as Soundchakra. I am passionate about creating and sharing music that resonates with the soul and connects people on a deeper level. Currently based in Germany with solo music production. Through my art, I strive to bring peace, harmony, and a sense of unity to all who listen. Future projects to be coming soon and a consistent passion for learning and growing.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <button class="toggle-btn" onclick="toggleSection(this)">-</button>
+            <div class="section-content">
+                <p>Bands I worked with:</p>
+                <ul>
+                    <li>Suspended Bridge, Kasthamandap - Progressive metal and math metal</li>
+                    <li>Level and Treble, Dynamix - Acoustic band playing in highly reputed clubs in Nepal</li>
+                </ul>
+                <p>Music production with originals on YouTube, worked in movies background scoring. Self-made musician.</p>
+            </div>
+        </section>
+
+        <section id="hobbies" class="section">
+            <h2>Hobbies</h2>
+            <button class="toggle-btn" onclick="toggleSection(this)">-</button>
+            <div class="section-content">
+                <ul>
+                    <li>Travelling</li>
+                    <li>Photography</li>
+                    <li>Videography</li>
+                    <li>Reading books</li>
+                    <li>Cooking</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="content" class="section">
+            <h2>Content</h2>
+            <button class="toggle-btn" onclick="toggleSection(this)">-</button>
+            <div class="section-content">
+                <p>Creating beautiful chill EDMs, making experimental music.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <button class="toggle-btn" onclick="toggleSection(this)">-</button>
+            <div class="section-content">
+                <ul>
+                    <li>Guitar Expert</li>
+                    <li>Music theory level advanced</li>
+                    <li>Multi-instrumentalist</li>
+                    <li>Background scoring</li>
+                    <li>Music reading</li>
+                    <li>Music theory level advanced</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Soundchakra<span class="musical-symbol">&#9835;</span></p>
+    </footer>
+
+    <script>
+        function toggleSection(button) {
+            const sectionContent = button.nextElementSibling;
+            if (sectionContent.style.display === 'none') {
+                sectionContent.style.display = 'block';
+                button.innerHTML = '-';
+            } else {
+                sectionContent.style.display = 'none';
+                button.innerHTML = '+';
+            }
+        }
+    </script>
+</body>
+</html>
